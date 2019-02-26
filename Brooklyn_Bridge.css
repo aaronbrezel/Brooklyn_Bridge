@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#toBrooklynLabel {
+    font-size: 1rem; 
+    font-weight: bold;
+    writing-mode: vertical-rl; 
+    text-orientation: upright;
+}
+
+#toManhattanLabel {
+    font-size: 1rem; 
+    font-weight: bold;
+    writing-mode: vertical-rl; 
+    text-orientation: upright;
+}
+
+svg {
+    background-color: lightblue;
+    width: 1200px; 
+    height: 600px;
+}
+
+.road {
+    fill: rgb(70,70,70);
+}
+
+#walkway {
+    fill: tan;
+}
+
+#toManhattan {
+    fill-opacity: 0;
+}
+
+#toBrooklyn {
+    fill-opacity: 0;
+}
