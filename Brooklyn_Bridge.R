@@ -8,15 +8,12 @@ brooklyn_bridge <- read.csv("Brooklyn_Bridge_Automated_Pedestrian_Counts.csv")
 View(brooklyn_bridge)
 
 
-#convert data frame to list for better json handling
-#BB_list <- c()
-#for(row in 1:nrow(brooklyn_bridge)){
-#  BB_list <- c(BB_list, brooklyn_bridge[row,])
-#}
+#Remove the lat and log values as we will not need them
+brooklyn_bridge <- brooklyn_bridge[,-c(9,10,12)]
+
+
+
   
-
-
-#brooklyn_bridge_JSON <- toJSON(brooklyn_bridge, dataframe = "columns")
 
 write_json(brooklyn_bridge, "brooklyn_bridge_pedestrians_json.json")
 
